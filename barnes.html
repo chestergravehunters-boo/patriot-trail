@@ -10,19 +10,35 @@
       margin: 2rem auto;
       padding: 0 1rem;
       line-height: 1.6;
-      font-size: 1.2rem;  /* Larger mobile-friendly text */
+      font-size: 1.2rem;  /* Base size for desktop */
     }
+
     h1 {
       font-size: 1.8rem;
       margin-bottom: 0.5rem;
     }
+
     h2 {
       margin-top: 2rem;
       font-size: 1.3rem;
     }
+
     .lead {
       margin-bottom: 1rem;
       font-weight: 500;
+    }
+
+    /* ⭐ Mobile-specific size boost */
+    @media (max-width: 600px) {
+      body {
+        font-size: 1.35rem;  /* Larger text for phones */
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>
@@ -84,3 +100,4 @@ Today, she is honored on the Patriot Trail as one of Chesterland’s earliest co
 
 </body>
 </html>
+ 
